@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookCase Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap">
+    <link rel="stylesheet" type="text/css" href="Style.css">   
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+
+<!--Start Navbar-->
+
+
+<div class="navbar">
+ 
+    <nav>
+    
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html" class="logo">BookCase</a></li>
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="product.html">Products</a></li>
+            <li ><a href="about.html">About Us</a></li>
+            <li ><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html" class="logo">BookCase</a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="product.html">Products</a></li>
+            <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        
+    </nav>
+
+
+</div>
+<!--End Navbar-->
+
+<!--Start Banner-->
+<div class="row">
+
+    <div class="col-2">
+        <h1>Explore BookCase Here</h1>
+        <p style="text-align: justify;">We have a huge collection of book in information technology. BookCase offers all books
+           at fair price and extends customer satisfaction by providing user-friedly search engine, easy payment option,
+           and quicker delivery system. We provide exciting offers and discounts on our books. BookCase is also looking 
+           to partner with all the sellers around the Pakistan. We have an affiliate program that pays a 10% commission on every 
+           sale. Anyone can join the program and be rewarded for advocacy of books. BookCase want to give back to everyone who
+           promotes books, authour,and independent bookstores! We have away over 65% of our profit margin to stores, and authours
+           eho make up the inspirational culture around books!
+        </p>
+        <a href="product.html" class="btn">Explore Now &#10137;</a>
+    </div>
+
+    <div class="col-2">
+        <img id="img" src="./Image/Main.jpg">
+    </div>
+
+</div>
+
+</div>
+</div>
+<!--End Banner-->
+
+<!--Start Category-->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+
+           <div class="col-3">
+            <img src="Image/Category-1.jpeg">
+           </div>
+
+           <div class="col-3">
+            <img src="Image/Category-2.jpeg">         
+           </div>
+
+           <div class="col-3">
+            <img src="Image/Category-3.jpeg">
+           </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--End Category-->
+
+<!--Start Featured Products-->
+<div class="featured">
+
+    <div class="small-container">
+
+        <h2 class="title">Featured Products</h2>
+
+        <div class="row" id="product-list">
+
+            <div class="col-4" data-target="#modal1">
+                <img src="Image/product-1.png">
+                <h4 class="product-name">HTML</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$80.00</p>
+            </div>    
+               
+            <div class="col-4" data-target="#modal2">
+                <img src="./Image/product-2.png">
+                <h4 class="product-name">CSS</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+
+            <div class="col-4" data-target="#modal3">
+                <img src="Image/product-3.png">
+                <h4 class="product-name">JavaScript</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+
+            <div class="col-4" data-target="#modal4">
+                <img src="./Image/product-4.png">
+                <h4 class="product-name">Angular</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4" data-target="#modal5">
+                <img src="Image/product-5.png">
+                <h4 class="product-name">Learning Programming Techniques</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$110.00</p>
+            </div>
+
+            <div class="col-4" data-target="#modal6">
+                <img src="Image/product-6.png">
+                <h4 class="product-name">Improving Productivity</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+
+            <div class="col-4" data-target="#modal7">
+                <img src="Image/product-7.jpeg">
+                <h4 class="product-name">Mordren Programming</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4" data-target="#modal8">
+                <img src="Image/product-8.png">
+                <h4 class="product-name">Mindfull Learning</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$150.00</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    
+</div>
+
+
+   
+<!--End Featured Products-->
+
+<!--Start Footer-->
+<div class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-row">
+
+            <div class="footer-col-1">
+
+                <a href="about.html"><h3>About Us</h3></a>
+
+                <p style="text-align: justify;"> 
+                     Discover a world of stories at BookCase. Dive into curated collections, 
+                     connect with fellow bookworms, and get personalized recommendations.
+                     Stay updated with the latest literary buzz on our blog. Start your reading journey today!
+                </p>
+
+            </div> 
+
+            <div class="footer-col-2">
+
+                <a href="index.html"><h3>Quick Links</h3></a>
+
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li> 
+
+                    <li>
+                        <a href="./product.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>         
+
+            </div>
+
+            <div class="footer-col-3">
+
+                <a href="product.html"><h3>Follow Us</h3></a>
+
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+
+                    <li>
+                        <a href="#">TikTok</a>
+                    </li>
+                </ul>  
+
+            </div>
+
+            <div class="footer-col-4">
+
+                <a href="contact.html"><h3>Contact Us</h3></a>
+
+                <ul>
+                    <li>
+                        <pre>Email   : letsgo@gmail.com</pre>
+                    </li>
+
+                    <li>
+                        <pre>Phone   : +923258477508</pre>
+                    </li>
+
+                    <li>
+                        <pre>Address : 48/B Korangi, Karachi, Pakistan </pre>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+           <hr>
+           <p class="copyright">@Copyright 2024 - BookCase.All Right Reserved</p>
+ 
+    </div>
+
+</div>
+<!--End Footer-->
+
+<!-- Start Modal-->
+<div class="modal" id="modal1">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="Image/product-1.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>HTML</h1>
+                    <h4>Price: $80</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal" id="modal2">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="./Image/product-2.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>CSS</h1>
+                    <h4>Price: $30</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="modal" id="modal3">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="./Image/product-3.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>JavaScript</h1>
+                    <h4>Price: $20</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="modal" id="modal4">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="./Image/product-4.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>Angular</h1>
+                    <h4>Price: $50</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="modal" id="modal5">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="Image/product-5.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>Learning Programming Techniques</h1>
+                    <h4>Price: $110</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="modal" id="modal6">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="Image/product-6.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>Improving Productivity</h1>
+                    <h4>Price: $35</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="modal" id="modal7">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="Image/product-7.jpeg" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>Mordren Programming</h1>
+                    <h4>Price: $95</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="modal" id="modal8">
+
+    <div class="single-item">
+
+        <div class="small-container">
+
+            <div class="modal-header">
+                <button class="close-modal">&times;</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="Image/product-8.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Books</p>
+                    <h1>Mindfull Learning</h1>
+                    <h4>Price: $150</h4>
+                    <h4>Quantity</h4>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br>
+                    <a href="" class="btn">Add To Card</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div id="overlay"></div>
+
+
+
+
+
+</body>
+
+<script src="./action.js"></script>
+
+</html>

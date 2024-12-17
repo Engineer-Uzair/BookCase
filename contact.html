@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookCase Website-Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!--Start Header-->
+<div class="header">
+
+  <div class="container">
+    
+       <!--Start Navbar-->
+       <div class="navbar">
+ 
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html" class="logo">BookCase</a></li>
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="product.html">Products</a></li>
+                <li ><a href="about.html">About Us</a></li>
+                <li ><a href="contact.html">Contact Us</a></li>
+            </ul>
+    
+            <ul>
+                <li><a href="index.html" class="logo">BookCase</a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="product.html">Products</a></li>
+                <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    
+    </div>
+    <!--End Navbar-->
+  </div>
+
+</div>
+<!--End Header-->
+
+<!-- Start Contact Us Form -->
+<div class="wrapper">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact">
+        <div id="error_message">
+    </div>
+
+    <form action="" id="myform" onsubmit="return validate();">
+        
+        <div class="input_field">
+            <input type="text" placeholder="Name" id="name">
+        </div>
+
+        <div class="input_field">
+            <input type="text" placeholder="Subject" id="subject">
+        </div>
+
+        <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+        </div>
+
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+        </div>
+
+        <div class="input_field">
+            <textarea type="text" placeholder="Message" id="message"></textarea>
+        </div>
+
+        <div class="submitbtn">
+            <input type="submit">
+        </div>  
+
+    </form>
+
+  </div>
+
+</div>
+
+<!-- End Contact Us Form -->
+
+<!--Start Footer-->
+<div class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-row">
+
+            <div class="footer-col-1">
+
+                <a href="about.html"><h3>About Us</h3></a>
+
+                <p style="text-align: justify;"> 
+                     Discover a world of stories at BookCase. Dive into curated collections, 
+                     connect with fellow bookworms, and get personalized recommendations.
+                     Stay updated with the latest literary buzz on our blog. Start your reading journey today!
+                </p>
+
+            </div> 
+
+            <div class="footer-col-2">
+
+                <a href="index.html"><h3>Quick Links</h3></a>
+
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li> 
+
+                    <li>
+                        <a href="./product.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>         
+
+            </div>
+
+            <div class="footer-col-3">
+
+                <a href="product.html"><h3>Follow Us</h3></a>
+
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+
+                    <li>
+                        <a href="#">TikTok</a>
+                    </li>
+                </ul>  
+
+            </div>
+
+            <div class="footer-col-4">
+
+                <a href="contact.html"><h3>Contact Us</h3></a>
+
+                <ul>
+                    <li>
+                        <pre>Email   : letsgo@gmail.com</pre>
+                    </li>
+
+                    <li>
+                        <pre>Phone   : +923258477508</pre>
+                    </li>
+
+                    <li>
+                        <pre>Address : 48/B Korangi, Karachi, Pakistan </pre>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+           <hr>
+           <p class="copyright">@Copyright 2024 - BookCase.All Right Reserved</p>
+ 
+    </div>
+
+</div>
+<!--End Footer-->
+
+</body>
+
+<script src="./action.js"></script>
+
+</html>
